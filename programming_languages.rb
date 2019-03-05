@@ -46,3 +46,4 @@ def lang_hash
     }
   }
 end
+puts reformat_languages(lang_hash)
