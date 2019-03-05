@@ -42,7 +42,7 @@ def lang_hash
       :javascript => {
         :type => "interpreted"
       }
-   
+
     }
   }
 end
