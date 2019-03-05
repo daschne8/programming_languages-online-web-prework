@@ -3,10 +3,8 @@ def reformat_languages(languages)
   languages.each do |style,style_languages|
     style_languages.each do |language,lan_data|
       if lan_data[:style].kind_of?(Array)
-        puts "array hooray"
-        lan_data[:style] = lan_data[:style] << style
+        lan_data[:style]  << style
       else
-        puts"not yet"
         lan_data[:style] = [style]
       end
       new_hash[language] = lan_data
