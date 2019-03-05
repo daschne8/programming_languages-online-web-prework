@@ -6,6 +6,7 @@ def reformat_languages(languages)
         puts "array hooray"
         lan_data[:style] = lan_data[:style] << style
       else
+        puts"not yet"
         lan_data[:style] = [style]
       end
       new_hash[language] = lan_data
