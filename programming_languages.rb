@@ -5,7 +5,7 @@ def reformat_languages(languages)
       if lan_data[:style].kind_of?(Array)
         lan_data[:style] << style
       else
-        lan_data[:style] = [] << style
+        lan_data[:style] = [style]
       end
       new_hash[language] = lan_data
     end
