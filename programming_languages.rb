@@ -3,6 +3,7 @@ def reformat_languages(languages)
   languages.each do |style,style_languages|
     style_languages.each do |language,lan_data|
       if lan_data[:style].kind_of?(Array)
+        puts "array hooray"
         lan_data[:style] = lan_data[:style] << style
       else
         lan_data[:style] = [style]
